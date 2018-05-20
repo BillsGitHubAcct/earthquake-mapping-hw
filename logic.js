@@ -74,7 +74,7 @@ d3.json(queryUrl, function(response) {
 					opacity: 1,
 					fillOpacity: 0.8
 // Attach popup with location and other information about the data point
-}).bindPopup("<h5>" + place + "<br>(mag. " + mag + ")</h5><hr><p>" + new Date(etime) + "</p>");
+}).bindPopup("<h5>" + place + "<br>(mag. " + mag + ") </h5><hr><p>" + new Date(etime) + "<br>" + latlng + "</p>");
 	  }
 	 }).addTo(earthquakes);
     earthquakes.addTo(myMap);
